@@ -1,5 +1,7 @@
 package org.archis;
 
+import org.archis.FactoryPattern.OS;
+import org.archis.FactoryPattern.OSFactory;
 import org.archis.SingletonPattern.LoggerSingleton;
 
 public class Driver {
@@ -14,12 +16,12 @@ public class Driver {
 //        System.out.println("-----------------");
 
         // Factory Pattern
-//        OSFactory osFactory = new OSFactory();
-//        OS os1 = osFactory.getInstance("Android");
-//        os1.spec();
-//        OS os2 = osFactory.getInstance("IOS");
-//        os2.spec();
-//        System.out.println("-----------------");
+        OSFactory osFactory = new OSFactory();
+        OS os1 = osFactory.getInstance("Android");
+        os1.spec();
+        OS os2 = osFactory.getInstance("IOS");
+        os2.spec();
+        System.out.println("-----------------");
 
         // Prototype Pattern
 //        BookShop bs1 = new BookShop();
